@@ -1,0 +1,366 @@
+:root {
+    /* Azul - tecnología / confianza */
+    --azul-principal: #0a3d62;
+    --azul-secundario: #1e6fa3;
+
+    /* Verde - crecimiento / comercio */
+    --verde-principal: #2ecc71;
+    --verde-secundario: #27ae60;
+
+    /* Neutros */
+    --fondo-claro: #f4f6f8;
+    --texto-oscuro: #2c3e50;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: var(--fondo-claro);
+    color: var(--texto-oscuro);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    background: white;
+    border-bottom: 3px solid var(--azul-principal);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 21px;
+    color: var(--azul-principal);
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--texto-oscuro);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: var(--verde-principal);
+}
+
+/* =========================
+   HERO SIMPLE (FONDO AZUL)
+========================= */
+.hero {
+    background: var(--azul-principal);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero a {
+    margin: 10px;
+    padding: 14px 25px;
+    background: var(--verde-principal);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.hero a:hover {
+    background: var(--verde-secundario);
+}
+
+/* =========================
+   HERO CON IMAGEN (PLATAFORMA)
+========================= */
+.hero-platform {
+    background:
+        linear-gradient(
+            rgba(10, 61, 98, 0.75),
+            rgba(10, 61, 98, 0.75)
+        ),
+        url('img/fondo.jpeg') center/cover no-repeat;
+
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero-btn {
+    background: var(--verde-principal);
+    padding: 14px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: var(--verde-secundario);
+}
+.mv-card h2 {
+    color: var(--azul-principal);
+}
+.mission-vision {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.container-mv {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mv-card {
+    background: #f4f6f8;
+    padding: 40px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.mv-card:hover {
+    transform: translateY(-5px);
+}
+
+.mv-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+    margin-left: 80px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+
+.btn-secondary {
+    background: #ffffff;
+    color: #0a2540;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cards, .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card, .price-card {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.pricing-section {
+    padding: 80px 20px;
+    background: #f4f6f8;
+    text-align: center;
+}
+
+.pricing-section h2 span {
+    color: #666;
+    font-size: 16px;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background: white;
+    width: 260px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.pricing-card h3 {
+    font-size: 22px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.price span {
+    font-size: 14px;
+    color: #666;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pricing-card ul li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* BOTONES */
+.btn-outline {
+    border: 1px solid var(--azul-principal);
+    color: var(--azul-principal);
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-dark {
+    background: var(--azul-principal);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* DESTACADO */
+.featured {
+    transform: scale(1.05);
+    border: 2px solid var(--verde-principal);
+}
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--verde-principal);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+form input, form button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+}
+
+footer {
+    background: var(--azul-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.areas-hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f6f8;
+}
+
+.areas-hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.areas-hero p {
+    max-width: 800px;
+    margin: auto;
+    color: #555;
+}
+
+.areas-grid {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.area-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: 0.3s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.area-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--azul-principal);
+}
+.area-card a {
+    color: var(--verde-secundario);
+    text-decoration: none;
+}
+
+.area-card p {
+    font-size: 14px;
+    color: #555;
+}
